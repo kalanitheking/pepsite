@@ -11,7 +11,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-lg font-bold text-dark-text mb-3">1. Acceptance of Terms</h2>
-            <p>By accessing or using the King Research website (the "Site") or placing an order, you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Site.</p>
+            <p>By accessing or using the King Research website (the &ldquo;Site&rdquo;) or placing an order, you agree to be bound by these Terms of Service (&ldquo;Terms&rdquo;). If you do not agree to these Terms, do not use the Site.</p>
           </section>
 
           <section>
@@ -65,7 +65,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-lg font-bold text-dark-text mb-3">9. Disclaimer of Warranties</h2>
-            <p>THE SITE AND ALL PRODUCTS ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. KING RESEARCH DISCLAIMS ALL WARRANTIES INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
+            <p>THE SITE AND ALL PRODUCTS ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE&rdquo; WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED. KING RESEARCH DISCLAIMS ALL WARRANTIES INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
           </section>
 
           <section>
@@ -75,7 +75,7 @@ export default function TermsPage() {
 
           <section>
             <h2 className="text-lg font-bold text-dark-text mb-3">11. Indemnification</h2>
-            <p>You agree to indemnify, defend, and hold harmless King Research, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including attorney's fees) arising from your use of the Site or products, your violation of these Terms, or your violation of any law or the rights of a third party.</p>
+            <p>You agree to indemnify, defend, and hold harmless King Research, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including attorney&apos;s fees) arising from your use of the Site or products, your violation of these Terms, or your violation of any law or the rights of a third party.</p>
           </section>
 
           <section>

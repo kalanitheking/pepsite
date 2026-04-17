@@ -11,7 +11,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-lg font-bold text-dark-text mb-3">1. Introduction</h2>
-            <p>King Research ("we," "us," or "our") is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase.</p>
+            <p>King Research (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or make a purchase.</p>
           </section>
 
           <section>
