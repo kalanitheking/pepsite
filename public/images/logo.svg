@@ -5,8 +5,8 @@
   -->
   <text x="287" y="98"
         text-anchor="end"
-        font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
-        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="4">KING</text>
+        font-family="Impact, 'Arial Black', 'Franklin Gothic Heavy', sans-serif"
+        font-weight="900" font-size="82" fill="#1e293b" letter-spacing="6">KING</text>
 
   <!--
     Crown: 180 px wide × 119 px tall (scale = 180/144 = 1.25 of master geometry).
@@ -29,6 +29,6 @@
   -->
   <text x="493" y="98"
         text-anchor="start"
-        font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
-        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="4">RESEARCH</text>
+        font-family="Impact, 'Arial Black', 'Franklin Gothic Heavy', sans-serif"
+        font-weight="900" font-size="82" fill="#1e293b" letter-spacing="6">RESEARCH</text>
 </svg>
