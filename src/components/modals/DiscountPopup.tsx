@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function DiscountPopup() {
   const [show, setShow] = useState(false);
@@ -64,8 +65,7 @@ export default function DiscountPopup() {
 
         {/* Logo */}
         <div className="mb-4">
-          {/* TODO: swap with <Image src="/images/logo.png"> when file is provided */}
-          <span className="my-head text-2xl font-bold block">King Research</span>
+          <Image src="/images/logo.svg" alt="King Research" width={160} height={40} className="h-10 w-auto mx-auto" />
         </div>
 
         {submitted ? (

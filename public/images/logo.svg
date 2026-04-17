@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 90" fill="none">
+  <!-- KING -->
+  <text x="0" y="68" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif" font-weight="900" font-size="48" letter-spacing="6" fill="#111111">KING</text>
+
+  <!-- Cross icon centered at x=188, spans ~84px wide, 84px tall -->
+  <g transform="translate(148, 3)">
+    <!-- Cross outline path (rounded cross / plus shape) -->
+    <path d="
+      M 28,0 L 56,0
+      Q 70,0 70,14 L 70,28
+      L 84,28 Q 84,28 84,42 L 84,42
+      Q 84,56 70,56 L 70,70
+      Q 70,84 56,84 L 28,84
+      Q 14,84 14,70 L 14,56
+      L 0,56 Q 0,42 0,42
+      Q 0,28 14,28 L 14,14
+      Q 14,0 28,0 Z
+    " stroke="#111111" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- S-curve divider creating interlocking effect -->
+    <path d="M 14,32 Q 14,42 28,42 Q 42,42 42,28 Q 42,14 56,14 Q 70,14 70,24"
+      stroke="#111111" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M 14,60 Q 14,70 28,70 Q 42,70 42,56 Q 42,42 56,42 Q 70,42 70,52"
+      stroke="#111111" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- RESEARCH -->
+  <text x="246" y="68" font-family="'Arial Black','Impact','Helvetica Neue',sans-serif" font-weight="900" font-size="48" letter-spacing="6" fill="#111111">RESEARCH</text>
+</svg>

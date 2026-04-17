@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function AgeGate() {
   const [show, setShow] = useState(false);
@@ -42,8 +43,7 @@ export default function AgeGate() {
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 flex flex-col items-center text-center">
         {/* Logo */}
         <div className="mb-6">
-          {/* TODO: swap with <Image src="/images/logo.png"> when file is provided */}
-          <span className="my-head text-3xl font-bold block">King Research</span>
+          <Image src="/images/logo.svg" alt="King Research" width={200} height={50} className="h-12 w-auto mx-auto" />
         </div>
 
         <h2 className="text-xl font-bold text-dark-text mb-2">

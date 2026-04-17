@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import FooterEmailForm from "./FooterEmailForm";
 
 export default function Footer() {
@@ -19,9 +20,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <span className="my-head text-xl font-bold block mb-3">
-              King Research
-            </span>
+            <Image src="/images/logo.svg" alt="King Research" width={160} height={40} className="h-10 w-auto mb-3 brightness-0 invert" />
             <p className="text-gray-400 text-sm leading-relaxed">
               Premium research peptides with third-party verified purity. For
               laboratory and research use only.

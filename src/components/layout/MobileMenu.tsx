@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 interface NavLink {
   label: string;
@@ -34,7 +35,7 @@ export default function MobileMenu({ open, onClose, navLinks }: MobileMenuProps)
       >
         {/* Header */}
         <div className="flex items-center justify-between px-5 h-16 border-b border-gray-100">
-          <span className="my-head text-xl font-bold">King Research</span>
+          <Image src="/images/logo.svg" alt="King Research" width={140} height={36} className="h-8 w-auto" />
           <button onClick={onClose} aria-label="Close menu" className="p-1 text-dark-text">
             <svg
               width="24"

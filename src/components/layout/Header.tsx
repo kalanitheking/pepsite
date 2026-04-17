@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 
 const navLinks = [
@@ -37,10 +38,15 @@ export default function Header() {
       >
         <div className="container-main flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="my-head text-2xl font-bold tracking-wide">
-              King Research
-            </span>
+          <Link href="/" className="flex items-center shrink-0">
+            <Image
+              src="/images/logo.svg"
+              alt="King Research"
+              width={180}
+              height={45}
+              priority
+              className="h-9 w-auto"
+            />
           </Link>
 
           {/* Desktop nav */}
