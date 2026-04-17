@@ -1,24 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 100" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 104" fill="none">
   <!-- KING -->
-  <text x="10" y="80"
+  <text x="10" y="82"
         font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
-        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="4">KING</text>
+        font-weight="900" font-size="78" fill="#1e293b" letter-spacing="4">KING</text>
 
-  <!-- Crown icon (140 × 85 box, positioned to align baseline with text) -->
-  <g transform="translate(252, 4)" stroke="#1e293b" stroke-width="6"
+  <!--
+    Crown icon: 144 wide × 97 tall (incl. base bars).
+    Inner lines go from each OUTER PEAK to the OPPOSITE VALLEY,
+    crossing at the centre — this creates the X / diamond facet
+    pattern that makes it look like a proper crown.
+  -->
+  <g transform="translate(234, 2)" stroke="#1e293b" stroke-width="6"
      fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Crown outer silhouette: 3 peaks + 2 valleys, open bottom -->
-    <polyline points="2,73 20,5 46,44 70,5 94,44 120,5 138,73"/>
-    <!-- Interior lines: bottom-left → center peak and bottom-right → center peak -->
-    <line x1="2"   y1="73" x2="70" y2="5"/>
-    <line x1="138" y1="73" x2="70" y2="5"/>
+    <!-- Outer crown silhouette: 3 peaks + 2 deep valleys -->
+    <polyline points="0,80 18,0 44,56 72,0 100,56 126,0 144,80"/>
+    <!-- Crossing inner lines: left-peak→right-valley  and  right-peak→left-valley -->
+    <line x1="18"  y1="0"  x2="100" y2="56"/>
+    <line x1="126" y1="0"  x2="44"  y2="56"/>
     <!-- Double underline base -->
-    <line x1="2" y1="80" x2="138" y2="80"/>
-    <line x1="2" y1="90" x2="138" y2="90"/>
+    <line x1="0" y1="87" x2="144" y2="87"/>
+    <line x1="0" y1="97" x2="144" y2="97"/>
   </g>
 
   <!-- RESEARCH -->
-  <text x="406" y="80"
+  <text x="396" y="82"
         font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
-        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="4">RESEARCH</text>
+        font-weight="900" font-size="78" fill="#1e293b" letter-spacing="4">RESEARCH</text>
 </svg>

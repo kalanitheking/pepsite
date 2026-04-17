@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import type { Product } from "@/lib/types";
+import ProductVialImage from "./ProductVialImage";
 
 interface ProductCardProps {
   product: Product;
@@ -15,10 +16,8 @@ export default function ProductCard({ product }: ProductCardProps) {
     <>
       <div className="bg-cream border border-[rgba(0,0,0,0.08)] rounded-[20px] overflow-hidden flex flex-col h-full">
         {/* Product image — empty alt intentional: prevents crawler indexing of product names */}
-        <div className="aspect-square bg-white flex items-center justify-center rounded-t-[10px] overflow-hidden">
-          <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-            <span className="text-muted-text text-xs text-center px-2">Product Image</span>
-          </div>
+        <div className="aspect-square rounded-t-[10px] overflow-hidden">
+          <ProductVialImage name={product.name} />
         </div>
 
         {/* Card body */}
