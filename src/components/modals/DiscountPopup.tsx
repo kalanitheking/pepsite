@@ -114,7 +114,7 @@ export default function DiscountPopup() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
                 required
-                className="w-full px-4 py-3 border border-gray-200 rounded-md text-sm focus:outline-none focus:border-gold"
+                className="w-full px-4 py-3 border border-gray-200 rounded-md text-sm focus:outline-none focus:border-gray-400"
               />
               <button
                 type="submit"

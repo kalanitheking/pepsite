@@ -56,7 +56,7 @@ export default function FaqAccordion() {
         <div className="text-center mt-10">
           <Link
             href="/faqs"
-            className="inline-block border border-gold text-gold px-8 py-3 rounded-md font-semibold text-sm hover:bg-cream transition-colors"
+            className="inline-block border border-gray-400 text-dark-text px-8 py-3 rounded-md font-semibold text-sm hover:bg-gray-50 transition-colors"
           >
             Want to learn more? Explore our full FAQ
           </Link>

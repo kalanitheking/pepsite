@@ -60,7 +60,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="text-dark-text hover:text-gold text-sm font-medium transition-colors flex items-center gap-1"
+                    className="text-dark-text hover:opacity-70 text-sm font-medium transition-colors flex items-center gap-1"
                   >
                     {link.label}
                     <svg
@@ -80,7 +80,7 @@ export default function Header() {
                         <Link
                           key={sub.label}
                           href={sub.href}
-                          className="block px-4 py-2 text-sm text-dark-text hover:text-gold hover:bg-cream transition-colors"
+                          className="block px-4 py-2 text-sm text-dark-text hover:opacity-70 hover:bg-gray-50 transition-colors"
                         >
                           {sub.label}
                         </Link>
@@ -92,7 +92,7 @@ export default function Header() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="text-dark-text hover:text-gold text-sm font-medium transition-colors"
+                  className="text-dark-text hover:opacity-70 text-sm font-medium transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -105,7 +105,7 @@ export default function Header() {
             {/* Cart */}
             <Link
               href="/products"
-              className="hidden lg:flex items-center gap-1 text-sm text-dark-text hover:text-gold transition-colors"
+              className="hidden lg:flex items-center gap-1 text-sm text-dark-text hover:opacity-70 transition-colors"
             >
               <svg
                 width="20"
@@ -128,7 +128,7 @@ export default function Header() {
             {/* Account */}
             <Link
               href="#"
-              className="hidden lg:flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-cream transition-colors"
+              className="hidden lg:flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-50 transition-colors"
             >
               <svg
                 width="16"

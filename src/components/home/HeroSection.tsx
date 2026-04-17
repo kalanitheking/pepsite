@@ -36,7 +36,7 @@ export default function HeroSection() {
             </Link>
             <Link
               href="/certificates"
-              className="inline-block border border-gold text-gold px-7 py-3 rounded-md font-semibold text-sm hover:bg-cream transition-colors"
+              className="inline-block border border-gray-400 text-dark-text px-7 py-3 rounded-md font-semibold text-sm hover:bg-gray-50 transition-colors"
             >
               View COAs
             </Link>

@@ -58,7 +58,7 @@ export default function MobileMenu({ open, onClose, navLinks }: MobileMenuProps)
               <Link
                 href={link.href}
                 onClick={onClose}
-                className="block px-5 py-3 text-dark-text font-medium hover:text-gold hover:bg-cream transition-colors"
+                className="block px-5 py-3 text-dark-text font-medium hover:opacity-70 hover:bg-gray-50 transition-colors"
               >
                 {link.label}
               </Link>
@@ -67,7 +67,7 @@ export default function MobileMenu({ open, onClose, navLinks }: MobileMenuProps)
                   key={sub.label}
                   href={sub.href}
                   onClick={onClose}
-                  className="block px-8 py-2 text-sm text-mid-text hover:text-gold hover:bg-cream transition-colors"
+                  className="block px-8 py-2 text-sm text-mid-text hover:opacity-70 hover:bg-gray-50 transition-colors"
                 >
                   {sub.label}
                 </Link>
@@ -81,7 +81,7 @@ export default function MobileMenu({ open, onClose, navLinks }: MobileMenuProps)
           <Link
             href="/products"
             onClick={onClose}
-            className="flex items-center gap-2 text-sm text-dark-text hover:text-gold transition-colors"
+            className="flex items-center gap-2 text-sm text-dark-text hover:opacity-70 transition-colors"
           >
             <svg
               width="18"
@@ -100,7 +100,7 @@ export default function MobileMenu({ open, onClose, navLinks }: MobileMenuProps)
           <Link
             href="#"
             onClick={onClose}
-            className="flex items-center gap-2 text-sm text-dark-text hover:text-gold transition-colors"
+            className="flex items-center gap-2 text-sm text-dark-text hover:opacity-70 transition-colors"
           >
             <svg
               width="18"

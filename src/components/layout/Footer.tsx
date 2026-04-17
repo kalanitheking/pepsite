@@ -42,7 +42,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 text-sm hover:text-gold transition-colors"
+                    className="text-gray-400 text-sm hover:opacity-70 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -60,7 +60,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:orders@kingresearch.com"
-                  className="text-gray-400 text-sm hover:text-gold transition-colors"
+                  className="text-gray-400 text-sm hover:opacity-70 transition-colors"
                 >
                   orders@kingresearch.com
                 </a>
@@ -68,7 +68,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact#wholesale"
-                  className="text-gray-400 text-sm hover:text-gold transition-colors"
+                  className="text-gray-400 text-sm hover:opacity-70 transition-colors"
                 >
                   Wholesale Inquiries
                 </Link>

@@ -13,7 +13,7 @@ export default function FooterEmailForm() {
 
   if (submitted) {
     return (
-      <p className="text-sm text-gold font-medium">
+      <p className="text-sm text-dark-text font-medium">
         Thanks for subscribing!
       </p>
     );
@@ -30,11 +30,11 @@ export default function FooterEmailForm() {
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Enter your email address"
         required
-        className="flex-1 px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-400 text-sm focus:outline-none focus:border-gold"
+        className="flex-1 px-4 py-2.5 rounded-md bg-white/10 border border-white/20 text-white placeholder-gray-400 text-sm focus:outline-none focus:border-gray-400"
       />
       <button
         type="submit"
-        className="px-6 py-2.5 bg-gold text-white text-sm font-semibold rounded-md hover:bg-gold-dark transition-colors whitespace-nowrap"
+        className="px-6 py-2.5 bg-dark-text text-white text-sm font-semibold rounded-md hover:bg-gray-700 transition-colors whitespace-nowrap"
       >
         Subscribe
       </button>

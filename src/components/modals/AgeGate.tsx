@@ -75,7 +75,7 @@ export default function AgeGate() {
             type="checkbox"
             checked={rememberMe}
             onChange={(e) => setRememberMe(e.target.checked)}
-            className="accent-gold"
+            className="accent-gray-600"
           />
           Remember me
         </label>
