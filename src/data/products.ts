@@ -9,7 +9,7 @@ export const products: Product[] = [
     shortDescription:
       "Tri-agonist targeting GLP-1R, GIPR, and GCGR receptors. 39 amino acids. C₂₁₀H₃₄₅N₅₉O₆₃S.",
     image: "/images/products/glp3-rta.png",
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const products: Product[] = [
     shortDescription:
       "Growth hormone-releasing hormone analogue. 44 amino acids. C₂₂₃H₃₇₀N₇₂O₆₉S, 5,195.9 g/mol.",
     image: "/images/products/tesamorelin.png",
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
@@ -59,7 +59,7 @@ export const products: Product[] = [
     shortDescription:
       "Dual secretagogue blend (5mg/5mg). Synergistic GHRH + GHRP action for growth hormone optimization.",
     image: "/images/products/cjc-1295-ipamorelin.png",
-    featured: true,
+    featured: false,
   },
   {
     id: 7,
@@ -69,6 +69,7 @@ export const products: Product[] = [
     shortDescription:
       "C₂₁H₂₇N₇O₁₄P₂, 663.43 g/mol. Essential coenzyme for cellular energy metabolism and DNA repair.",
     image: "/images/products/nad-plus.png",
+    featured: true,
   },
   {
     id: 8,
@@ -78,6 +79,7 @@ export const products: Product[] = [
     shortDescription:
       "15 amino acid body protection compound. C₆₂H₉₈N₁₆O₂₂, 1,419.53 g/mol. Research-grade purity.",
     image: "/images/products/bpc-157.png",
+    featured: true,
   },
   {
     id: 9,
@@ -123,6 +125,7 @@ export const products: Product[] = [
     shortDescription:
       "43 amino acid naturally occurring peptide. C₂₁₂H₃₅₀N₅₆O₇₈S, ~4,963 g/mol. Tissue repair research.",
     image: "/images/products/tb-500.png",
+    featured: true,
   },
   {
     id: 14,
@@ -141,6 +144,7 @@ export const products: Product[] = [
     shortDescription:
       "γ-Glu-Cys-Gly. C₁₀H₁₇N₃O₆S, 307.32 g/mol. Master antioxidant tripeptide in reduced form.",
     image: "/images/products/glutathione.png",
+    featured: true,
   },
   {
     id: 16,
