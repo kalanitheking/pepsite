@@ -3,7 +3,6 @@ import HeroSection from "@/components/home/HeroSection";
 import FeatureSection from "@/components/home/FeatureSection";
 import ProductCarousel from "@/components/home/ProductCarousel";
 import DifferenceSection from "@/components/home/DifferenceSection";
-import FaqAccordion from "@/components/home/FaqAccordion";
 
 export default function HomePage() {
   return (
@@ -13,7 +12,6 @@ export default function HomePage() {
       <FeatureSection />
       <ProductCarousel />
       <DifferenceSection />
-      <FaqAccordion />
     </>
   );
 }

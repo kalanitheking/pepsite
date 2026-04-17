@@ -2,35 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Gold gradient text — logo, product titles, prices */
+/* Plain dark text — replaces gold gradient */
 .gold-gradient-text {
-  background: linear-gradient(
-    135deg,
-    #7a5517,
-    #b8892d 30%,
-    #f2d27a,
-    #b8892d 70%,
-    #7a5517
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #1e293b;
 }
 
-/* Alias used in original site source */
 .my-head {
-  background: linear-gradient(
-    135deg,
-    #7a5517,
-    #b8892d 30%,
-    #f2d27a,
-    #b8892d 70%,
-    #7a5517
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  filter: drop-shadow(0 1px 2px #b8892d59);
+  color: #1e293b;
 }
 
 /* Shared container */
