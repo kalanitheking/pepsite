@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gold gradient text — logo, product titles, prices */
+.gold-gradient-text {
+  background: linear-gradient(
+    135deg,
+    #7a5517,
+    #b8892d 30%,
+    #f2d27a,
+    #b8892d 70%,
+    #7a5517
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Alias used in original site source */
+.my-head {
+  background: linear-gradient(
+    135deg,
+    #7a5517,
+    #b8892d 30%,
+    #f2d27a,
+    #b8892d 70%,
+    #7a5517
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 1px 2px #b8892d59);
+}
+
+/* Shared container */
+.container-main {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Swiper custom overrides */
+.swiper-pagination-bullet-active {
+  background-color: #b8892d !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b8892d !important;
+}
+
+/* FAQ accordion answer panel transition */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+.faq-answer.open {
+  max-height: 500px;
+}
+
+/* Scroll-to-top button */
+.scroll-top-btn {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.scroll-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Mobile menu slide */
+.mobile-menu-panel {
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+.mobile-menu-panel.open {
+  transform: translateX(0);
+}
