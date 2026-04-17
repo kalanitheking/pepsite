@@ -24,21 +24,23 @@ export default function ProductVialImage({ name }: Props) {
   // Unique gradient/clip IDs per product to avoid conflicts in the same DOM
   const uid = "v" + primary.replace(/[^a-z0-9]/gi, "").slice(0, 8).toLowerCase();
 
-  // Crown paths (scaled to width w from original 144-wide design)
-  // Original key points: peaks (18,0)(72,0)(126,0), valleys (44,56)(100,56), corners y=80
-  // Inner cross: (18,0)→(100,56) and (126,0)→(44,56)
-  // Bars: y=87 and y=97
+  // Crown paths — scaled to width w from the 144-wide master design.
+  // Inner lines: base-CORNER → opposite outer PEAK (the long diagonals that
+  // cross at centre and produce the four-facet diamond matching the logo).
   function crown(w: number, x: number, y: number, sw: number) {
     const s = w / 144;
     const p = (v: number) => +(v * s).toFixed(1);
     return (
       <g transform={`translate(${x},${y})`} stroke="#1e293b" strokeWidth={sw}
          fill="none" strokeLinecap="round" strokeLinejoin="round">
+        {/* Outer silhouette: 3 peaks + 2 deep valleys */}
         <polyline points={`0,${p(80)} ${p(18)},0 ${p(44)},${p(56)} ${p(72)},0 ${p(100)},${p(56)} ${p(126)},0 ${p(144)},${p(80)}`} />
-        <line x1={p(18)} y1={0} x2={p(100)} y2={p(56)} />
-        <line x1={p(126)} y1={0} x2={p(44)} y2={p(56)} />
-        <line x1={0} y1={p(87)} x2={p(144)} y2={p(87)} />
-        <line x1={0} y1={p(97)} x2={p(144)} y2={p(97)} />
+        {/* Corner → opposite peak (Design B — matches the reference logo exactly) */}
+        <line x1={0}      y1={p(80)} x2={p(126)} y2={0} />
+        <line x1={p(144)} y1={p(80)} x2={p(18)}  y2={0} />
+        {/* Double underline base bars */}
+        <line x1={0} y1={p(88)} x2={p(144)} y2={p(88)} />
+        <line x1={0} y1={p(98)} x2={p(144)} y2={p(98)} />
       </g>
     );
   }
@@ -153,8 +155,8 @@ export default function ProductVialImage({ name }: Props) {
         RESEARCH USE ONLY
       </text>
 
-      {/* ════ Crown — top-left corner of image ════ */}
-      {crown(44, 20, 18, 1.8)}
+      {/* ════ Crown — top-left corner, inside the light area, clear of the vial ════ */}
+      {crown(50, 22, 22, 2.0)}
 
       {/* Diamond star — bottom right */}
       <path d="M376,376 L379,369 L386,366 L379,363 L376,356 L373,363 L366,366 L373,369 Z"

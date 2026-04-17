@@ -1,29 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 104" fill="none">
-  <!-- KING -->
-  <text x="10" y="82"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 102" fill="none">
+  <!--
+    KING — right-aligned so the gap to the crown is always exactly 12px,
+    regardless of which bold font the browser picks.
+    Crown occupies x=330 → x=474 (144 units wide).
+  -->
+  <text x="318" y="82"
+        text-anchor="end"
         font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
-        font-weight="900" font-size="78" fill="#1e293b" letter-spacing="4">KING</text>
+        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="3">KING</text>
 
   <!--
-    Crown icon: 144 wide × 97 tall (incl. base bars).
-    Inner lines go from each OUTER PEAK to the OPPOSITE VALLEY,
-    crossing at the centre — this creates the X / diamond facet
-    pattern that makes it look like a proper crown.
+    Crown: 144 units wide × 97 units tall (incl. base bars).
+    Inner lines run from each BASE CORNER to the opposite OUTER PEAK —
+    these are the long diagonals that cross in the centre and create the
+    four-facet diamond pattern visible in the reference logo.
   -->
-  <g transform="translate(234, 2)" stroke="#1e293b" stroke-width="6"
+  <g transform="translate(330, 2)" stroke="#1e293b" stroke-width="6.5"
      fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Outer crown silhouette: 3 peaks + 2 deep valleys -->
+    <!-- Outer silhouette: 3 peaks + 2 deep valleys -->
     <polyline points="0,80 18,0 44,56 72,0 100,56 126,0 144,80"/>
-    <!-- Crossing inner lines: left-peak→right-valley  and  right-peak→left-valley -->
-    <line x1="18"  y1="0"  x2="100" y2="56"/>
-    <line x1="126" y1="0"  x2="44"  y2="56"/>
-    <!-- Double underline base -->
-    <line x1="0" y1="87" x2="144" y2="87"/>
-    <line x1="0" y1="97" x2="144" y2="97"/>
+    <!-- Crossing inner lines: bottom-left→right-peak  and  bottom-right→left-peak -->
+    <line x1="0"   y1="80" x2="126" y2="0"/>
+    <line x1="144" y1="80" x2="18"  y2="0"/>
+    <!-- Double underline base bars -->
+    <line x1="0" y1="88" x2="144" y2="88"/>
+    <line x1="0" y1="98" x2="144" y2="98"/>
   </g>
 
-  <!-- RESEARCH -->
-  <text x="396" y="82"
+  <!--
+    RESEARCH — left-aligned from 12px after the crown ends (x=474+12=486).
+  -->
+  <text x="486" y="82"
+        text-anchor="start"
         font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
-        font-weight="900" font-size="78" fill="#1e293b" letter-spacing="4">RESEARCH</text>
+        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="3">RESEARCH</text>
 </svg>
