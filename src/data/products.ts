@@ -182,6 +182,15 @@ export const products: Product[] = [
       "C₁₅₂H₂₅₂N₄₄O₄₂, 3,368.7 g/mol. Modified GRF(1-29) without drug affinity complex.",
     image: "/images/products/cjc-1295-no-dac.png",
   },
+  {
+    id: 20,
+    slug: "bac-water",
+    name: "BAC Water | Bacteriostatic Water | 10mL",
+    price: "$15–$25",
+    shortDescription:
+      "0.9% Benzyl Alcohol USP-grade sterile water for reconstituting lyophilized research peptides. 10mL multi-use vial.",
+    image: "/images/products/bac-water.png",
+  },
 ];
 
 export const featuredProducts = products.filter((p) => p.featured);

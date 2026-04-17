@@ -9,6 +9,7 @@ const categories = [
   { label: "Skin & Anti-Aging", slugs: ["ghk-cu", "glutathione", "melanotan-ii", "epithalon"] },
   { label: "Cognitive & Neuro", slugs: ["semax", "selank"] },
   { label: "Growth Hormone", slugs: ["cjc-1295-ipamorelin", "cjc-1295-no-dac", "ipamorelin"] },
+  { label: "Supplies & Accessories", slugs: ["bac-water"] },
 ];
 
 export default function ProductsPage() {

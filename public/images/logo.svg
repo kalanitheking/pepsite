@@ -1,37 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 102" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 122" fill="none">
   <!--
-    KING — right-aligned so the gap to the crown is always exactly 12px,
-    regardless of which bold font the browser picks.
-    Crown occupies x=330 → x=474 (144 units wide).
+    KING — right-aligned so the gap to the crown left edge is always exactly 13px.
+    Text-anchor="end" guarantees no overlap regardless of font rendering.
   -->
-  <text x="318" y="82"
+  <text x="287" y="98"
         text-anchor="end"
         font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
-        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="3">KING</text>
+        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="4">KING</text>
 
   <!--
-    Crown: 144 units wide × 97 units tall (incl. base bars).
-    Inner lines run from each BASE CORNER to the opposite OUTER PEAK —
-    these are the long diagonals that cross in the centre and create the
-    four-facet diamond pattern visible in the reference logo.
+    Crown: 180 px wide × 119 px tall (scale = 180/144 = 1.25 of master geometry).
+    Center peak tallest (y=0), outer peaks at y=28, deep valleys at y=75, base at y=100.
+    Inner lines: outer-peak → opposite valley (X crossing).
+    Double base bars at y=109 and y=119.
   -->
-  <g transform="translate(330, 2)" stroke="#1e293b" stroke-width="6.5"
+  <g transform="translate(300, 2)" stroke="#1e293b" stroke-width="8"
      fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Outer silhouette: center peak tallest (y=0), outer peaks shorter (y=22), deep valleys (y=60) -->
-    <polyline points="0,80 16,22 42,60 72,0 102,60 128,22 144,80"/>
-    <!-- Inner lines: outer-peak → opposite valley (creates X crossing) -->
-    <line x1="16"  y1="22" x2="102" y2="60"/>
-    <line x1="128" y1="22" x2="42"  y2="60"/>
-    <!-- Double underline base bars -->
-    <line x1="0" y1="88" x2="144" y2="88"/>
-    <line x1="0" y1="98" x2="144" y2="98"/>
+    <polyline points="0,100 20,28 53,75 90,0 128,75 160,28 180,100"/>
+    <line x1="20"  y1="28"  x2="128" y2="75"/>
+    <line x1="160" y1="28"  x2="53"  y2="75"/>
+    <line x1="0"   y1="109" x2="180" y2="109"/>
+    <line x1="0"   y1="119" x2="180" y2="119"/>
   </g>
 
   <!--
-    RESEARCH — left-aligned from 12px after the crown ends (x=474+12=486).
+    RESEARCH — left-aligned 13px after the crown right edge (300+180+13 = 493).
+    Text-anchor="start" ensures it never overlaps the crown.
   -->
-  <text x="486" y="82"
+  <text x="493" y="98"
         text-anchor="start"
         font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
-        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="3">RESEARCH</text>
+        font-weight="900" font-size="76" fill="#1e293b" letter-spacing="4">RESEARCH</text>
 </svg>
