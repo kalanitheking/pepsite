@@ -17,11 +17,11 @@
   -->
   <g transform="translate(330, 2)" stroke="#1e293b" stroke-width="6.5"
      fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Outer silhouette: 3 peaks + 2 deep valleys -->
-    <polyline points="0,80 18,0 44,56 72,0 100,56 126,0 144,80"/>
-    <!-- Crossing inner lines: bottom-left→right-peak  and  bottom-right→left-peak -->
-    <line x1="0"   y1="80" x2="126" y2="0"/>
-    <line x1="144" y1="80" x2="18"  y2="0"/>
+    <!-- Outer silhouette: center peak tallest (y=0), outer peaks shorter (y=22), deep valleys (y=60) -->
+    <polyline points="0,80 16,22 42,60 72,0 102,60 128,22 144,80"/>
+    <!-- Inner lines: outer-peak → opposite valley (creates X crossing) -->
+    <line x1="16"  y1="22" x2="102" y2="60"/>
+    <line x1="128" y1="22" x2="42"  y2="60"/>
     <!-- Double underline base bars -->
     <line x1="0" y1="88" x2="144" y2="88"/>
     <line x1="0" y1="98" x2="144" y2="98"/>
